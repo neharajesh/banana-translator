@@ -1,0 +1,53 @@
+body {
+    background-color: #f5e045;
+}
+textarea {
+    height: 10vh;
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+    width: 80%;
+    text-align: left;
+    padding-left: 3.2rem;
+    
+}
+
+#output {
+    border: 1px solid red;
+    height : 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    padding-left: 3.2rem;
+    text-align: left;
+}
+
+/** header **/
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-image{
+    margin: auto;
+    max-width: 400px;
+    display: block;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+/** container **/
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
