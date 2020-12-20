@@ -1,3 +1,5 @@
+Access-Control-Allow-Origin: https://neha-banana-translator.netlify.app/
+
 var textInput = document.querySelector("#txt-input");
 
 var btnTranslate = document.querySelector("#btn-translate");
@@ -7,7 +9,8 @@ var outputDiv = document.querySelector("#output");
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
 function getTranslationUrl(text) {
-    return serverUrl + "?" + "text=" + text;
+    var encodedURI = encodeURI(text);
+    return `${serverUrl}?text=${encodedURI}`;
 }
 
 function errorHandler(error) {
@@ -15,9 +18,6 @@ function errorHandler(error) {
 }
 
 btnTranslate.addEventListener("click", function clickEventHandler() {
-    //console.log("Clicked!");
-    //console.log("input", textInput.value);
-    //outputDiv.innerText = "translation wala output -> " + textInput.value;
 
     var inputText = textInput.value;
 
