@@ -4,13 +4,15 @@ var btnTranslate = document.querySelector("#btn-translate");
 
 var outputDiv = document.querySelector("#output");
 
+var errorDiv = document.querySelector("#error-handler");
+
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
 function getTranslationUrl(text) {
     return serverUrl + "?" + "text=" + text;
 }
 function errorHandler(error) {
-    console.log("an error occurred => "+ error)
+    errorHandler.innerText = "error occurred => " + error;
 }
 btnTranslate.addEventListener("click", function clickEventHandler() {
 

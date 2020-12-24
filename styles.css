@@ -51,3 +51,8 @@ textarea {
     text-align: center;
     margin: auto;
 }
+
+#error-handler {
+    background-color: red;
+    color: white;
+}
